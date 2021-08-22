@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@drawable/loginbackground"
-        tools:context=".ui.auth.LoginActivity">
+        tools:context=".ui.activities.LoginActivity">
 
         <TextView
             android:layout_width="match_parent"
@@ -239,6 +239,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/progress_bar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:indeterminateTint="@color/colorAccent"
                     android:layout_gravity="center_horizontal|center_vertical"/>
 
                 <Button

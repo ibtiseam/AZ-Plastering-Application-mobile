@@ -1,7 +1,11 @@
 package com.example.login.ui.auth
 
+
 import android.view.View
+
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+
 import com.example.login.data.repositories.UserRepository
 
 class AuthViewModel : ViewModel() {
@@ -11,13 +15,19 @@ class AuthViewModel : ViewModel() {
 
     var authListener: AuthListener? = null
 
+
     fun onLoginButtonClick(view: View){
         authListener?.onStarted()
         if (username.isNullOrEmpty() || password.isNullOrEmpty()){
             authListener?.onFailure("username ou mot de passe est invalid")
             return
         }
-        val  loginResponse = UserRepository().userLogin(username!!, password!!)
-        authListener?.onSuccess(loginResponse)
-    }
+      val loginResponse = UserRepository().userLogin(username!!, password!!)
+            authListener?.onSuccess(loginResponse)
+
+
+        }
+
+
+
 }

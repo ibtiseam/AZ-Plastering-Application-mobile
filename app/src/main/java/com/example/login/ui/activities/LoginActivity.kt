@@ -1,14 +1,19 @@
-package com.example.login.ui.auth
+package com.example.login.ui.activities
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.login.R
+import com.example.login.data.network.responses.UserResponse
 import com.example.login.databinding.ActivityLoginBinding
+import com.example.login.sharedpreference.PreferenceHelper
+import com.example.login.ui.auth.AuthListener
+import com.example.login.ui.auth.AuthViewModel
 import com.example.login.util.hide
 import com.example.login.util.show
 import com.example.login.util.toast
@@ -22,19 +27,26 @@ class LoginActivity : AppCompatActivity(), AuthListener {
         val binding: ActivityLoginBinding =DataBindingUtil.setContentView(this, R.layout.activity_login)
         val viewModel = ViewModelProvider(this).get(AuthViewModel::class.java)
 
+
+
         binding.viewmodel= viewModel
 
         viewModel.authListener =this
+
     }
 
     override fun onStarted() {
         progress_bar.show()
     }
 
-    override fun onSuccess(loginResponse: LiveData<String>) {
+    override fun onSuccess(loginResponse: LiveData<UserResponse?>) {
        loginResponse.observe(this, Observer {
+           it?.let { user ->
+               PreferenceHelper.setUserConnected(this,user)
+           }
            progress_bar.hide()
-           toast(it)
+           val intent = Intent(this@LoginActivity, MainActivity::class.java)
+           startActivity(intent)
        })
     }
 
