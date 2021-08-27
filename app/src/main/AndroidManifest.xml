@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.login" >
+    package="com.example.login">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,13 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginPageUi"
         android:usesCleartextTraffic="true"
-        tools:ignore="AllowBackup" >
-
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".ui.activities.DetailActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.activities.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.activities.Splash_Screen"
+            android:name=".ui.splash.Splash_Screen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -32,6 +34,7 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+
         <activity
             android:name=".ui.activities.LoginActivity"
             android:exported="true" />

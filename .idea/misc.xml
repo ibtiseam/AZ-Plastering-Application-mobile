@@ -15,17 +15,24 @@
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/drawable/switch_trcks.xml" value="0.240625" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/drawable/switch_tumbs.xml" value="0.240625" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/activity_chantier.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/activity_detail.xml" value="0.25" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/adapter_chantier.xml" value="0.12001811594202899" />
+        <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/adapter_movie.xml" value="0.10916919959473151" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/character_layout.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/fragment_chantier.xml" value="0.25" />
+        <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/fragment_detail.xml" value="0.25" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/fragment_home.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/fragment_info.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/fragment_new_chantier.xml" value="0.21" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/main_login.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/recycler_list_row.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/recycleview.xml" value="0.23867069486404835" />
+        <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/recycleview_Home.xml" value="0.12001811594202899" />
+        <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/recycleview_home.xml" value="0.12001811594202899" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/rick_morty_layout.xml" value="0.25" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/slider_item.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/ibtis/AndroidStudioProjects/AZ-plastring/app/src/main/res/layout/toolbar.xml" value="0.25" />

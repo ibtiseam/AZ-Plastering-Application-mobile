@@ -1,4 +1,4 @@
-package com.example.login.ui.activities
+package com.example.login.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,21 +8,21 @@ import android.view.ViewGroup
 import com.example.login.R
 
 //
-class NewChantierFragment : Fragment() {
+class InfoFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_new_chantier, container, false)
+        return inflater.inflate(R.layout.fragment_info, container, false)
     }
 
     companion object {
 
         @JvmStatic
         fun newInstance() =
-            NewChantierFragment().apply {
+            InfoFragment().apply {
                 arguments = Bundle().apply {}
             }
     }

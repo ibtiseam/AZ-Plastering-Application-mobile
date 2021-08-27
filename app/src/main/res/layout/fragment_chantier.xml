@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#f3efd4"
     android:orientation="vertical"
+    android:id="@+id/list_chantier"
     tools:context=".ui.activities.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -17,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:itemCount="5"
-        tools:listitem="@layout/adapter_movie" />
+        tools:listitem="@layout/adapter_chantier" />
 
 
 </LinearLayout>
