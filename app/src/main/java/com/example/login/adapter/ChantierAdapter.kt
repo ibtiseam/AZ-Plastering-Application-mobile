@@ -1,12 +1,13 @@
 package com.example.recycleview.adapter
 
-import android.content.Intent
+
+import android.graphics.BitmapFactory
+import android.util.Base64
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.login.databinding.AdapterChantierBinding
-import com.example.login.ui.activities.DetailActivity
 import com.example.recycleview.Chantier
 import com.example.recycleview.adapter.ChantierAdapter.onItemClickListener
 
@@ -51,20 +52,14 @@ class ChantierAdapter : RecyclerView.Adapter<MainViewHolder>() {
 
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val chantier = chantiers[position]
-        holder.binding.name.text = chantier.filename
-        Glide.with(holder.itemView.context).load(chantier.url).into(holder.binding.imageview)
+        holder.binding.name.text = chantier.name
 
+        val imageBytes = Base64.decode(chantier.filePath, Base64.DEFAULT)
+        val decodedImage = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size)
+       // imageView.setImageBitmap(decodedImage)
 
-//        setOnItemClickListener(object : ChantierAdapter.onItemClickListener {
-//            override fun onIemClick(position: Int) {
-//
-//                val intent = Intent(holder.itemView.context, DetailActivity::class.java)
-//                intent.putExtra("filename", chantiers[position].filename)
-//                intent.putExtra("image",chantiers[position].url)
-//                holder.itemView.context.startActivity(intent)
-//
-//            }
-//        })
+        Glide.with(holder.itemView.context).load(decodedImage).into(holder.binding.imageview)
+
 
     }
 

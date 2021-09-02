@@ -42,10 +42,16 @@ class LoginActivity : AppCompatActivity(), AuthListener {
        loginResponse.observe(this, Observer {
            it?.let { user ->
                PreferenceHelper.setUserConnected(this,user)
+               val intent = Intent(this@LoginActivity, MainActivity::class.java)
+               intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+               startActivity(intent)
+               finish()
+
            }
+
            progress_bar.hide()
-           val intent = Intent(this@LoginActivity, MainActivity::class.java)
-           startActivity(intent)
+
+
        })
     }
 

@@ -1,7 +1,8 @@
 package com.example.login.ui.activities
 
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.example.login.R
@@ -9,8 +10,6 @@ import com.example.login.ui.fragments.ChantierFragment
 import com.example.login.ui.fragments.HomeFragment
 import com.example.login.ui.fragments.InfoFragment
 import com.example.login.ui.fragments.NewChantierFragment
-
-
 import kotlinx.android.synthetic.main.activity_main.*
 
 

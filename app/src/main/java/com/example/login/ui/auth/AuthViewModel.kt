@@ -2,10 +2,7 @@ package com.example.login.ui.auth
 
 
 import android.view.View
-
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-
 import com.example.login.data.repositories.UserRepository
 
 class AuthViewModel : ViewModel() {

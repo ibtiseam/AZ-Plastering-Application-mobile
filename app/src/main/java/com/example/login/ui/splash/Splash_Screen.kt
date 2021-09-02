@@ -1,10 +1,10 @@
 package com.example.login.ui.splash
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
 import com.example.login.R
 import com.example.login.sharedpreference.PreferenceHelper
 import com.example.login.ui.activities.LoginActivity

@@ -1,12 +1,12 @@
 package com.example.login.data.network
 
 import com.example.login.data.network.responses.UserResponse
-
 import retrofit2.Call
-
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.*
+import retrofit2.http.Field
+import retrofit2.http.FormUrlEncoded
+import retrofit2.http.POST
 
 interface MyApi {
 

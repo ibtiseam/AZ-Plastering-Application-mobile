@@ -1,4 +1,4 @@
-package com.example.login.data.network
+package com.example.login.chantierApi
 
 import com.example.recycleview.Chantier
 import retrofit2.Call
@@ -8,7 +8,7 @@ import retrofit2.http.GET
 
 interface RetrofitService {
 
-    @GET("files")
+    @GET("listChantie")
     fun getAllChantier() : Call<List<Chantier>>
 
     companion object {
